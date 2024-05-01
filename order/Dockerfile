@@ -1,4 +1,4 @@
-FROM gradle:8.7-jdk21-alpine
+FROM gradle:8.7-jdk21
 WORKDIR extracted
 
 COPY . .

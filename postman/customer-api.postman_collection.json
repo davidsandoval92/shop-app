@@ -67,7 +67,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"firstName\": \"Mariam\",\n    \"lastName\": \"Becerra\",\n    \"email\": \"mariam@gmail.com\",\n    \"dateOfBirth\": \"2017-06-15\"\n}",
+					"raw": "{\n\t\"firstName\": \"David\",\n    \"lastName\": \"Sandoval\",\n    \"email\": \"david@gmail.com\",\n    \"dateOfBirth\": \"2017-06-15\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -122,7 +122,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/ms/customer/v1/customer/2",
+					"raw": "http://localhost:8080/ms/customer/v1/customer/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -133,7 +133,7 @@
 						"customer",
 						"v1",
 						"customer",
-						"2"
+						"1"
 					]
 				},
 				"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
