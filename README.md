@@ -56,6 +56,7 @@ Para ejecutar los microservicios localmente, siga estos pasos:
 - pruebas unitarias y de integracion
 - implementacion de even driven with kafka
 - No carge la tabla de eventos con 2 millones de registros pero esta paginada y deberia soportar tal carga.
+- creacion de enums para los estados de las diferentes entidades.
 
 ## Autor
 
