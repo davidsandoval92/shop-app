@@ -57,10 +57,11 @@ Para ejecutar los microservicios localmente, siga estos pasos:
 - En el proyecto existe una carpeta llamada `postman` que contiene las colecciones de los endpoints antes mencionados.
 
 ## cosas que faltaron por implementar debido a tiempo:
-- pruebas unitarias y de integracion
-- implementacion de even driven with kafka
+- Pruebas unitarias y de integracion
+- Implementacion de even driven with kafka
 - No carge la tabla de eventos con 2 millones de registros pero esta paginada y deberia soportar tal carga.
-- creacion de enums para los estados de las diferentes entidades.
+- Creacion de enums para los estados de las diferentes entidades.
+- Diagrama de clases
 
 ## Autor
 
