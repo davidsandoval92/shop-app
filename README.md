@@ -19,7 +19,7 @@ El proyecto cumple con los siguientes requisitos:
 
 4. **Patrón de Repositorio Genérico**: El proyecto incorpora un patrón de repositorio genérico utilizando al menos uno de los dos ORMs comúnmente utilizados.
 
-5. **Integración de Segunda API**: Se ha desarrollado una segunda API utilizando Java Spring, que se comunica con la primera API para intercambiar información.
+5. **Integración de Segunda API**: Se ha desarrollado una segunda API (order-api) utilizando Java Spring, que se comunica con la primera API (customer-api) para intercambiar información.
 
 6. **Comunicación HTTP con Interruptor de Circuito**: La comunicación entre las APIs ocurre a través de HTTP con funcionalidad de interruptor de circuito para mejorar la confiabilidad y la tolerancia a fallos (endpoint: http://localhost:8080/ms/customer/v1/customer/1).
 
