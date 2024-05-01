@@ -7,6 +7,10 @@ Este proyecto consiste en dos microservicios desarrollados utilizando el framewo
 1. **Microservicio del Dominio del Cliente**: Permite a los usuarios realizar operaciones CRUD en los datos de los clientes.
 2. **Microservicio del Dominio de Pedidos**: Permite a los usuarios crear pedidos, recuperar pedidos y paginar eventos.
 
+## Diagrama
+
+![Logo](shop.drawio.png)
+
 ## Requerimientos
 
 El proyecto cumple con los siguientes requisitos:
