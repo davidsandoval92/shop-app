@@ -19,7 +19,7 @@ El proyecto cumple con los siguientes requisitos:
 
 4. **Patrón de Repositorio Genérico**: El proyecto incorpora un patrón de repositorio genérico utilizando al menos uno de los dos ORMs comúnmente utilizados.
 
-5. **Integración de Segunda API**: Se ha desarrollado una segunda API utilizando Java Spring, que se comunica con la primera API para intercambiar información.
+5. **Integración de Segunda API**: Se ha desarrollado una segunda API (order-api) utilizando Java Spring, que se comunica con la primera API (customer-api) para intercambiar información.
 
 6. **Comunicación HTTP con Interruptor de Circuito**: La comunicación entre las APIs ocurre a través de HTTP con funcionalidad de interruptor de circuito para mejorar la confiabilidad y la tolerancia a fallos (endpoint: http://localhost:8080/ms/customer/v1/customer/1).
 
@@ -31,7 +31,8 @@ Para ejecutar los microservicios localmente, siga estos pasos:
 2. En la raiz del repositorio existe un docker compose.
 3. Construya las imágenes de Docker: `docker-compose build`
 4. Inicie los contenedores: `docker-compose up`
-5. Acceda a las APIs utilizando los endpoints proporcionados.
+5. Es posible que la primer vez que utilice docker-compose up las apis presenten un error por la base de datos ya que es la primera vez que suben los servicios y los ms pueden ser mas rapidos que la db, por favor si estos ocurre volver a paso 3 y 4, despues de esto deberia funcionar con normalidad. (Fue probado en un windows 11 y un mac m1)
+6. Acceda a las APIs utilizando los endpoints proporcionados.
 
 ## Uso
 
@@ -54,8 +55,10 @@ Para ejecutar los microservicios localmente, siga estos pasos:
 ## cosas que faltaron por implementar debido a tiempo:
 - pruebas unitarias y de integracion
 - implementacion de even driven with kafka
+- No carge la tabla de eventos con 2 millones de registros pero esta paginada y deberia soportar tal carga.
+- creacion de enums para los estados de las diferentes entidades.
 
 ## Autor
 
-### David Rodolfo Sandoval Penagos
+### David Rodolfo Sandoval Penagos - davidsandoval9217@gmail.com
 
