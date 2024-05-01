@@ -18,6 +18,16 @@ public class OrderMapper {
                 .build();
     }
 
+    public static OrderEntity responseToEntity(OrderResponse response) {
+        return OrderEntity.builder()
+                .orderId(response.OrderId())
+                .customerId(response.customerId())
+                .status(Objects.nonNull(response.status()) ? response.status() : "received")
+                .created(Objects.nonNull(response.created()) ? response.created() : LocalDateTime.now())
+                .updated(Objects.nonNull(response.updated()) ? response.updated() : LocalDateTime.now())
+                .build();
+    }
+
     public static OrderResponse entityToResponse(OrderEntity entity) {
         return new OrderResponse(entity.getOrderId(), entity.getCustomerId(), entity.getStatus(), entity.getCreated(), entity.getUpdated());
     }

@@ -2,6 +2,7 @@ package com.shop.order.application.impl;
 
 import com.shop.order.application.api.ShipmentService;
 import com.shop.order.application.mapper.ShipmentMapper;
+import com.shop.order.domain.entity.ShipmentEntity;
 import com.shop.order.domain.repository.ShipmentRepository;
 import com.shop.order.infrastructure.vo.ShipmentRequest;
 import com.shop.order.infrastructure.vo.ShipmentResponse;
@@ -21,13 +22,13 @@ public class ShipmentServiceImpl implements ShipmentService {
     }
 
     @Override
-    public ShipmentResponse createShipment(ShipmentRequest shipmentRequest) {
-        return ShipmentMapper.entityToResponse(repository.save(ShipmentMapper.requestToEntity(shipmentRequest)));
+    public ShipmentResponse createShipment(ShipmentEntity shipmentEntity) {
+        return ShipmentMapper.entityToResponse(repository.save(shipmentEntity));
     }
 
     @Override
-    public void updateShipmentStatus(ShipmentRequest shipmentRequest, Long shipmentId, String status) {
-        repository.save(ShipmentMapper.updateStatusToEntity(shipmentRequest, shipmentId, status));
+    public void updateShipmentStatus(ShipmentEntity shipmentEntity) {
+        repository.save(shipmentEntity);
     }
 
 }
