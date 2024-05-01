@@ -59,5 +59,5 @@ Para ejecutar los microservicios localmente, siga estos pasos:
 
 ## Autor
 
-### David Rodolfo Sandoval Penagos
+### David Rodolfo Sandoval Penagos - davidsandoval9217@gmail.com
 
