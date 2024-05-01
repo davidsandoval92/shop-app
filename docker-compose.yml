@@ -2,7 +2,7 @@ version: '2.1'
 
 services:
   customer:
-    build: /customer
+    build: ./customer
     mem_limit: 512m
     ports:
       - "8080:8080"
@@ -10,7 +10,7 @@ services:
       - SPRING_PROFILES_ACTIVE=docker
 
   order:
-    build: /order
+    build: ./order
     mem_limit: 512m
     ports:
       - "8081:8080"
