@@ -31,7 +31,8 @@ Para ejecutar los microservicios localmente, siga estos pasos:
 2. En la raiz del repositorio existe un docker compose.
 3. Construya las imágenes de Docker: `docker-compose build`
 4. Inicie los contenedores: `docker-compose up`
-5. Acceda a las APIs utilizando los endpoints proporcionados.
+5. Es posible que la primer vez que utilice docker-compose up las apis presenten un error por la base de datos ya que es la primera vez que suben los servicios y los ms pueden ser mas rapidos que la db, por favor si estos ocurre volver a paso 3 y 4, despues de esto deberia funcionar con normalidad. (Fue probado en un windows 11 y un mac m1)
+6. Acceda a las APIs utilizando los endpoints proporcionados.
 
 ## Uso
 
